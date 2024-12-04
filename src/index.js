@@ -2,6 +2,7 @@
 import React, {PureComponent} from 'react';
 import {Animated, Easing, PanResponder, StyleSheet, View, ViewPropTypes} from 'react-native';
 import {PropTypes} from 'prop-types';
+import {DeprecatedPropTypes} from 'deprecated-react-native-prop-types';
 /* eslint-enable import/no-unresolved, import/extensions */
 
 function noop() {}
@@ -76,12 +77,12 @@ export default class Swipeable extends PureComponent {
     swipeStartMinDistance: PropTypes.number,
 
     // styles
-    style: ViewPropTypes.style,
-    leftContainerStyle: ViewPropTypes.style,
-    leftButtonContainerStyle: ViewPropTypes.style,
-    rightContainerStyle: ViewPropTypes.style,
-    rightButtonContainerStyle: ViewPropTypes.style,
-    contentContainerStyle: ViewPropTypes.style
+    style: DeprecatedPropTypes.ViewPropTypes.style,
+    leftContainerStyle: DeprecatedPropTypes.ViewPropTypes.style,
+    leftButtonContainerStyle: DeprecatedPropTypes.ViewPropTypes.style,
+    rightContainerStyle: DeprecatedPropTypes.ViewPropTypes.style,
+    rightButtonContainerStyle: DeprecatedPropTypes.ViewPropTypes.style,
+    contentContainerStyle: DeprecatedPropTypes.ViewPropTypes.style
   };
 
   static defaultProps = {
